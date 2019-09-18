@@ -30,12 +30,6 @@ insert into Medico(crm, uf, nome, cpf, altura, peso) VALUES
 ('223aaab33', 'PR', 'Willian Mendes Salve', '002.424.55-33',1.60, 100.00),
 ('203ueie33', 'MG', 'Cleiton Fernando Aziquial', '245.223.10-09',1.90, 600.00);
 
-insert into Medico(crm, uf, nome, cpf, altura, peso) VALUES
-('2033ueie3', 'MG', 'Cleiton Fernando Aziquial', '245.223.10-09',1.90, 600.00);
-
-insert into Medico(crm, uf, nome, cpf, altura, peso) VALUES
-('112345', 'sr', '111', '3351221231233-99',2.90, 400.00);
-
 select * from Medico;
 
 desc Medico;
