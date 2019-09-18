@@ -12,7 +12,7 @@ create table Medico(
     PRIMARY KEY (crm,uf)
 );
 
-CREATE TRIGGER value_altura BEFORE INSERT ON Medico FOR EACH ROW
+CREATE TRIGGER rules_inset BEFORE INSERT ON Medico FOR EACH ROW
 begin
     if NEW.altura > 2.50 then
         SIGNAL SQLSTATE '12345'
