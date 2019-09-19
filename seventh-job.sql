@@ -22,8 +22,6 @@ create table VEHICLES(
     YEAR_MANUFACTURE date not null ,
     YEAR_MODEL date not null,
     VALUE float(6,2) not null,
-    MODEL int (100),
+    MODEL varchar(100),
     PRIMARY KEY (COD)
 );
-
-ALTER TABLE VEHICLES ADD CONSTRAINT ID_MODEL FOREIGN KEY (COD) REFERENCES MODELS (COD)
