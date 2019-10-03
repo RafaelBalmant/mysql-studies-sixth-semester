@@ -2,13 +2,14 @@ create database sexto_trabalho;
 
 use sexto_trabalho;
 
-create table Medico(
+create or replace table Medico(
     crm varchar(10) NOT NULL,
     uf varchar(2) NOT NULL,
     nome varchar(30) NOT NULL,
     cpf VARBINARY(30) NOT NULL UNIQUE,
     altura float(3,2) UNSIGNED NOT NULL,
     peso float(6,3) UNSIGNED NOT NULL,
+    check (altura < 2.50),
     PRIMARY KEY (crm,uf)
 );
 
