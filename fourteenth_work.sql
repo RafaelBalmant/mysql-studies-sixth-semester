@@ -28,7 +28,4 @@ CREATE OR REPLACE TABLE Aluno(
     nome VARCHAR(20) NOT NULL
 );
 
-CREATE ROLE 'diretor', 'professor', 'coordenador', 'secretaria', 'aluno'
-
-
-show tables;
+CREATE ROLE 'diretor', 'professor', 'coordenador', 'secretaria', 'aluno';
