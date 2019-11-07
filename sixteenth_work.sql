@@ -83,6 +83,13 @@ show grants for recepcionista;
 show grants for recursosHumanos;
 show grants for hospede;
 
+create user if not exists 'ana'@'localhost' identified by 'q1w2e3r4';
+create user if not exists 'bruna'@'localhost' identified by '123456';
+create user if not exists 'joao'@'localhost' identified by 'qwer1234';
+create user if not exists 'paulo'@'localhost' identified by 'abcdef';
+create user if not exists 'sueli'@'localhost' identified by 'a1s2d3f4';
+
+select user,host,password from mysql.user;
 
 
 
